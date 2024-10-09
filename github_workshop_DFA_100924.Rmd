@@ -1,0 +1,59 @@
+---
+title: "Github workshop"
+author: "Ilaria Stollberg"
+date: "2024-10-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Useful resources
+https://swcarpentry.github.io/git-novice/  
+A very good website that leads you through all the steps to set up your own Github!
+
+## Introducing ourselves to Github
+How do we get access to GitHub from our terminal?  
+- git config --global user.name "your_username"  
+- git config --global user.email "your_email@mail"  
+
+- Check everything is fine: git config --list  
+
+### Customising our experience
+- If we want to open an editor like VSCode, we can set it as the core editor: git config --global core.editor "nano -w"
+- If we want to change the name of the master branch, we can customise it (e.g., by calling it main instead): git config --global init.defaultBranch main
+- If we want to store credentials on our PERSONAL computer (only if computer isn't shared!): git config --global credential.helper store
+
+## Useful tips
+- On terminal, we can use the command: cd your/directory
+- To go back one folder: cd ..
+- To go back two folders: cd ../..
+
+## Creating our first repository
+- git init (creates new repository)
+- touch text.txt (create an empty example file, also script.r)
+- git status (check what's going on)
+
+### Basic git commands
+- git add
+- git commit (record change)
+- or git restore (disregard any changes - be careful!)
+
+## On GitHub.com...
+- We can create repositories from scratch, and add a README file to provide a handy guide for the users
+- Repos can be public or private depending on what you're using them for
+- .gitignore can be used to hide certain files that might be useless to the user
+
+- cloning:
+  - cloning repositories can be done in multiple ways: cloning is useful if you want to work on someone else's project without affecting the original repo
+
+- pushing and committing changes
+  - we need to create a token to commit our changes to the repository:
+  click on your profile bubble on the website > select 'settings' > scroll down to 'developer settings' on the left hand menu > select 'tokens' > click on generate new token > classic > follow instructions to authenticate yourself > you have a token! > customise token name (e.g., give it a meaningful name, set an expiry date...)
+  - 
+
+
+
+
+
+
